@@ -1,0 +1,18 @@
+.container {
+    width: 350px;
+    border: 2px solid #eaeaea;
+    border-radius: 6px;
+    height: 150px;
+    position: relative;
+    text-align: center;
+    /*font-size: 10px;*/
+    margin: 0 auto 1em auto;
+}
+
+.container > p:first-child {
+    font-size: 70px;
+}
+
+.container > p {
+    margin: 0;
+}

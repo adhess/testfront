@@ -1,0 +1,112 @@
+.link {
+  text-decoration: none;
+  >img {
+    width: 32px;
+    margin: 6px 6px 0 6px;
+
+    @media only screen and (min-width: 560px) {
+      display: none;
+    }
+  }
+  >div {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 1em 0 1em;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 0 3px;
+
+    >h1 {
+      margin: 0;
+    }
+    transition: all .4s;
+    &:hover {
+      border: 2px solid #eaeaea;
+    }
+    @media only screen and (max-width: 559px) {
+      display: none;
+    }
+  }
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 100%;
+  height: fit-content;
+  top: 0;
+  position: fixed;
+  background: var(--nav);
+  z-index: 1200;
+
+  background: rgba( 12, 0, 255, 0.5 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.box {
+  //border-bottom: 2px solid rgba(var(--navBorder), 0.8);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.searchText {
+  border-radius: 6px;
+  background-color: white;
+  width: 100%;
+  max-width: 332px;
+  height: 40px;
+}
+
+.searchAction {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+
+  >:nth-child(2), >:nth-child(1) {
+    margin: 3px 0 7px 0;
+  }
+  @media only screen and (max-width: 599px) {
+    margin-left: 6px;
+  }
+  @media only screen and (min-width: 600px) {
+    margin: auto !important;
+  }
+  .categoriesButton {
+    background: white;
+    margin: 3px 6px 6px 6px;
+    width: 170px;
+    height: 40px;
+    border: 2px solid #eaeaea;
+    @media only screen and (max-width: 959px) {
+      width: 40px;
+    }
+
+  }
+
+  .categoriesButton:hover {
+    background: #eaeaea;
+  }
+}
+
+.logo {
+  height: 35px;
+  margin: 10px 0 auto 10px;
+}
+
+.filterImg {
+  width: 32px;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 50%;
+}
+
+.filter_button {
+  margin: 2px 0 !important;
+  width: 43px;
+  height: 43px;
+}

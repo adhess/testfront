@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.noProduct {
+    width: 100% !important;
+    height: 100% !important;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    p {
+        font-size: 50px;
+    }
+    h3 {
+        color: var(--cherry);
+    }
+    h3 , h4 , p {
+        margin: 0
+    }
+}
+
+.item {
+    width: 260px;
+    margin: 8px;
+    border: 1px solid #E0E0E0;
+    border-radius: 6px;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    transition: all .2s;
+    top: 0;
+    text-decoration: none;
+    height: 317px;
+}
+
+.skeletonPrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+.order_list_products {
+    width: 100%;
+    transition: all 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.drawerOpened {
+    width: calc(100% - 333px);
+    margin-left: 333px;
+}
+
